@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee-scroll {
+    will-change: transform;
+    animation: marquee-scroll 30s linear infinite;
+}
+
+#circle-out {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: none;
+    position: fixed;
+    padding: 5px;
+    animation: grow 0.8s infinite;
+    top: 100px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+@-webkit-keyframes grow {
+    0%,
+    100% {
+        border: 2px solid #d81159;
+    }
+    50% {
+        border: 8px solid #d81159;
+    }
+}
