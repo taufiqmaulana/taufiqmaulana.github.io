@@ -69,38 +69,51 @@
             }
         </script>
     </head>
-    <body
-        class="dark:bg-slate-900 dark:text-slate-300 text-slate-800 items-center flex flex-col pb-24"
-    >
-        <nav
-            class="flex w-full justify-between fixed max-w-[80rem] bg-white dark:bg-slate-900 z-40"
-        >
-            <div class="flex items-center space-x-2">
-                <img class="w-6" src="/id-flag.png" alt="Indonesian Flag" />
-                <span>Indonesia</span>
-            </div>
-            <div class="flex">
-                <a class="p-8 dark:hover:bg-slate-600" href="#">Motivation</a>
-                <a class="p-8 dark:hover:bg-slate-600" href="#skills">Skills</a>
-                <a class="p-8 dark:hover:bg-slate-600" href="#experiences"
-                    >Experiences</a
-                >
-                <a class="p-8 dark:hover:bg-slate-600" href="#portofolios"
-                    >Portofolios</a
-                >
-                <a class="p-8 dark:hover:bg-slate-600" href="#contacts"
-                    >Contacts</a
-                >
-            </div>
-        </nav>
-        <div class="max-w-[80rem] mt-20">
-            <div class="flex mt-8 items-center">
-                <div class="space-y-2 max-w-[40rem]">
-                    <h1 class="text-6xl uppercase">
+    <body class="dark:bg-slate-900 dark:text-slate-300 text-slate-800">
+        <div class="container mx-auto px-8 xl:px-0 print:w-full">
+            <nav
+                class="sticky top-0 justify-between flex bg-white dark:bg-slate-900 z-40"
+            >
+                <div class="flex items-center space-x-2 py-8">
+                    <img class="w-6" src="/id-flag.png" alt="Indonesian Flag" />
+                    <span>Indonesia</span>
+                </div>
+                <div class="lg:flex hidden">
+                    <a class="p-8 dark:hover:bg-slate-600" href="#"
+                        >Motivation</a
+                    >
+                    <a class="p-8 dark:hover:bg-slate-600" href="#skills"
+                        >Skills</a
+                    >
+                    <a class="p-8 dark:hover:bg-slate-600" href="#experiences"
+                        >Experiences</a
+                    >
+                    <a class="p-8 dark:hover:bg-slate-600" href="#portofolios"
+                        >Portofolios</a
+                    >
+                    <a class="p-8 dark:hover:bg-slate-600" href="#contacts"
+                        >Contacts</a
+                    >
+                </div>
+            </nav>
+            <div class="flex items-center">
+                <div class="space-y-2 flex-1">
+                    <div
+                        class="lg:hidden px-20 mb-10 flex flex-1 items-center justify-center"
+                    >
+                        <img
+                            class="aspect-square rounded-4xl dark:bg-black bg-slate-900 shadow-2xl"
+                            alt="Profile Image"
+                            src="/profile.png"
+                        />
+                    </div>
+                    <h1 class="lg:text-6xl text-4xl uppercase">
                         Taufiq
-                        <span class="text-4xl text-slate-400">Maulana</span>
+                        <span class="lg:text-4xl text-2xl text-slate-400"
+                            >Maulana</span
+                        >
                     </h1>
-                    <h2 class="text-2xl mt-10" id="motivation">
+                    <h2 class="text-2xl mt-8" id="motivation">
                         Software Engineer
                     </h2>
                     <p class="leading-7 text-justify">
@@ -109,31 +122,46 @@
                         technology solutions. With a strong computer science
                         foundation and hands-on experience in full-stack
                         development, I brings dedication, curiosity, and a
-                        results-oriented mindset to every project. Committed to
-                        writing clean, scalable code, and continually improving
-                        my skills and the systems I work with. I'm excited to
-                        contribute my technical expertise and collaborative
-                        spirit to a team that values innovation, quality, and
-                        meaningful impact through technology.
+                        results-oriented mindset to every project.
                     </p>
-                    <div class="flex mt-8 items-center">
-                        <h3 class="text-6xl"><span id="yearExp"></span>+</h3>
-                        <div class="ml-2">Years<br />Experience</div>
-                        <h3 class="text-6xl ml-10">30+</h3>
-                        <div class="ml-2">Projects<br />Completed</div>
-                        <h3 class="text-6xl ml-10">4</h3>
-                        <div class="ml-2">Companies<br />Organizations</div>
+                    <p class="leading-7 text-justify hidden lg:block">
+                        Committed to writing clean, scalable code, and
+                        continually improving my skills and the systems I work
+                        with. I'm excited to contribute my technical expertise
+                        and collaborative spirit to a team that values
+                        innovation, quality, and meaningful impact through
+                        technology.
+                    </p>
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="flex items-center mt-8 lg:mr-10">
+                            <h3 class="text-6xl">
+                                <span id="yearExp"></span>+
+                            </h3>
+                            <div class="ml-2">Years<br />Experience</div>
+                        </div>
+                        <div class="flex items-center mt-8 lg:mr-10">
+                            <h3 class="text-6xl">30+</h3>
+                            <div class="ml-2">Projects<br />Completed</div>
+                        </div>
+                        <div class="flex items-center mt-8 lg:mr-10">
+                            <h3 class="text-6xl">4</h3>
+                            <div class="ml-2">Companies<br />Organizations</div>
+                        </div>
                     </div>
                 </div>
-                <div class="p-24">
+                <div
+                    class="hidden lg:flex p-10 flex-1 items-center justify-center"
+                >
                     <img
                         class="aspect-square rounded-full dark:bg-black bg-slate-900 shadow-2xl"
                         alt="Profile Image"
                         src="/profile.png"
+                        width="450"
+                        height="450"
                     />
                 </div>
             </div>
-            <div class="mask-x-from-80%">
+            <div class="mask-x-from-80% mt-10 lg-mt-0">
                 <div class="flex items-center">
                     <div class="flex-grow border-t border-slate-400"></div>
                     <span class="flex-shrink mx-4 text-slate-400"
@@ -185,7 +213,7 @@
                 </div>
             </div>
             <div class="mt-8 flex items-center" id="skills">
-                <div class="flex-1 p-20">
+                <div class="hidden lg:flex flex-1 p-20">
                     <dotlottie-wc
                         src="/coding-anim.json"
                         speed="1"
@@ -259,7 +287,7 @@
                     <div class="flex-grow border-t border-slate-400"></div>
                 </div>
                 <div
-                    class="flex items-center justify-center pt-6 pb-8 text-xl border-b border-slate-400"
+                    class="flex space-y-2 flex-col lg:space-y-0 lg:flex-row lg:items-center justify-center pt-6 pb-8 text-xl border-b border-slate-400"
                 >
                     <div class="mr-24">
                         <b>Collega Inti Pratama</b>
@@ -283,7 +311,10 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-10 grid grid-cols-3 gap-4" id="portofolios">
+            <div
+                class="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3"
+                id="portofolios"
+            >
                 <a
                     rel="noopener noreferrer"
                     href="https://newafe.skkmigas.go.id"
@@ -444,8 +475,8 @@
                     </p>
                 </div>
             </div>
-            <div class="border-t border-slate-400 my-16"></div>
-            <div class="space-y-2">
+            <div class="border-t border-slate-400 my-10"></div>
+            <div class="space-y-2 mb-16">
                 <h2 class="text-2xl" id="contacts">Contacts</h2>
                 <ul class="list-none leading-7">
                     <li>
@@ -456,20 +487,15 @@
                         />
                         <a href="mailto:taufiq.maulana@yahoo.com"
                             >taufiq.maulana@yahoo.com</a
-                        >,
-                        <a href="mailto:taufiq@mcoder.dev">taufiq@mcoder.dev</a>
+                        >
                     </li>
                     <li>
                         <img
                             class="h-5 inline mr-2 dark:invert"
-                            src="/linkedin-linked-in-svgrepo-com.svg"
-                            alt="LinkedIn"
+                            src="/mail-unread-svgrepo-com.svg"
+                            alt="Mail"
                         />
-                        <a
-                            rel="noopener noreferrer"
-                            href="https://www.linkedin.com/in/taufiq-maulana-818938108/"
-                            >linkedin.com/in/taufiq-maulana-818938108</a
-                        >
+                        <a href="mailto:taufiq@mcoder.dev">taufiq@mcoder.dev</a>
                     </li>
                     <li>
                         <img
@@ -481,6 +507,18 @@
                             rel="noopener noreferrer"
                             href="https://github.com/taufiqmaulana"
                             >github.com/taufiqmaulana</a
+                        >
+                    </li>
+                    <li>
+                        <img
+                            class="h-5 inline mr-2 dark:invert"
+                            src="/linkedin-linked-in-svgrepo-com.svg"
+                            alt="LinkedIn"
+                        />
+                        <a
+                            rel="noopener noreferrer"
+                            href="https://www.linkedin.com/in/taufiq-maulana-818938108/"
+                            >linkedin.com/in/taufiq-maulana-818938108</a
                         >
                     </li>
                 </ul>
