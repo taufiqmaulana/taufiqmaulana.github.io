@@ -76,7 +76,8 @@
             >
                 <div class="flex items-center space-x-2 py-8">
                     <img class="w-6" src="/id-flag.png" alt="Indonesian Flag" />
-                    <span>Indonesia</span>
+                    <span class="hidden lg:block">Indonesia</span>
+                    <span class="block lg:hidden">Taufiq Maulana</span>
                 </div>
                 <div class="lg:flex hidden">
                     <a class="p-8 dark:hover:bg-slate-600" href="#"
@@ -102,7 +103,7 @@
                         class="lg:hidden px-20 mb-10 flex flex-1 items-center justify-center"
                     >
                         <img
-                            class="aspect-square rounded-4xl dark:bg-black bg-slate-900 shadow-2xl"
+                            class="aspect-square rounded-full dark:bg-black bg-slate-900 shadow-2xl"
                             alt="Profile Image"
                             src="/profile.png"
                         />
@@ -287,7 +288,7 @@
                     <div class="flex-grow border-t border-slate-400"></div>
                 </div>
                 <div
-                    class="flex space-y-2 flex-col lg:space-y-0 lg:flex-row lg:items-center justify-center pt-6 pb-8 text-xl border-b border-slate-400"
+                    class="flex space-y-2 flex-col lg:space-y-0 lg:flex-row lg:items-center justify-center pt-6 pb-8 text-xl"
                 >
                     <div class="mr-24">
                         <b>Collega Inti Pratama</b>
@@ -311,10 +312,12 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3"
-                id="portofolios"
-            >
+            <div class="relative flex items-center mt-10" id="portofolios">
+                <div class="flex-grow border-t border-slate-400"></div>
+                <span class="flex-shrink mx-4 text-slate-400">PORTOFOLIOS</span>
+                <div class="flex-grow border-t border-slate-400"></div>
+            </div>
+            <div class="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3">
                 <a
                     rel="noopener noreferrer"
                     href="https://newafe.skkmigas.go.id"
@@ -475,10 +478,13 @@
                     </p>
                 </div>
             </div>
-            <div class="border-t border-slate-400 my-10"></div>
+            <div class="relative flex items-center mt-10" id="portofolios">
+                <div class="flex-grow border-t border-slate-400"></div>
+                <span class="flex-shrink mx-4 text-slate-400">CONTACTS</span>
+                <div class="flex-grow border-t border-slate-400"></div>
+            </div>
             <div class="space-y-2 mb-16">
-                <h2 class="text-2xl" id="contacts">Contacts</h2>
-                <ul class="list-none leading-7">
+                <ul class="list-none leading-7 mt-4">
                     <li>
                         <img
                             class="h-5 inline mr-2 dark:invert"
@@ -524,7 +530,7 @@
                 </ul>
             </div>
         </div>
-        <div id="circle-out" class="print:hidden z-50"></div>
+        <div id="circle-out" class="hidden z-50 lg:block print:hidden"></div>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("yearExp").innerText =
