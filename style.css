@@ -27,7 +27,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-@-webkit-keyframes grow {
+@keyframes grow {
     0%,
     100% {
         border: 2px solid #d81159;

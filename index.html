@@ -3,11 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Taufiq Maulana is experienced profesional software engineer with more than 10 years experience."
+        />
+        <meta
+            name="keywords"
+            content="Taufiq Maulana, Software Engineer, Software Architect, SDLC"
+        />
+        <link rel="icon" type="image/png" href="/icon.png" />
         <link rel="stylesheet" href="style.css" />
         <script
+            defer
+            async
             src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
             type="module"
         ></script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Portofolio",
+                "headline": "Taufiq Maulana Experienced Software Engineer",
+                "image": "/profile.png",
+                "datePublished": "2025-08-18",
+                "author": {
+                    "@type": "Person",
+                    "name": "Taufiq Maulana"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "MCoder",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "/icon.png"
+                    }
+                },
+                "articleBody": "A passionate and detail-oriented software engineer who enjoys solving complex problems and building impactful technology solutions ..."
+            }
+        </script>
         <title>About Taufiq</title>
     </head>
     <body
@@ -17,7 +50,7 @@
             class="flex w-full justify-between fixed max-w-[80rem] bg-white dark:bg-slate-900 z-40"
         >
             <div class="flex items-center space-x-2">
-                <img class="w-6" src="public/id-flag.png" />
+                <img class="w-6" src="/id-flag.png" alt="Indonesian Flag" />
                 <span>Indonesia</span>
             </div>
             <div class="flex">
@@ -69,7 +102,8 @@
                 <div class="p-24">
                     <img
                         class="aspect-square rounded-full dark:bg-black bg-slate-900 shadow-2xl"
-                        src="public/profile.png"
+                        alt="Profile Image"
+                        src="/profile.png"
                     />
                 </div>
             </div>
@@ -126,12 +160,8 @@
             </div>
             <div class="mt-8 flex items-center" id="skills">
                 <div class="flex-1 p-20">
-                    <!-- <img
-                        class="aspect-auto saturate-0 brightness-125"
-                        src="public/cloud.png"
-                    /> -->
                     <dotlottie-wc
-                        src="public/coding-anim.json"
+                        src="/coding-anim.json"
                         speed="1"
                         style="width: 100%; height: 420px"
                         mode="normal"
@@ -229,16 +259,17 @@
             </div>
             <div class="mt-10 grid grid-cols-3 gap-4" id="portofolios">
                 <a
+                    rel="noopener noreferrer"
                     href="https://newafe.skkmigas.go.id"
                     class="border p-4 rounded-2xl dark:hover:bg-slate-800 hover:bg-slate-100 border-slate-700 border-dashed space-y-2 flex flex-col hover:shadow-xl"
                 >
-                    <h4 class="font-bold flex justify-between">
+                    <h3 class="font-bold flex justify-between">
                         Authorization For Expenditure
                         <small
                             class="border border-blue-500 text-blue-500 rounded p-1"
                             >Proprietary</small
                         >
-                    </h4>
+                    </h3>
                     <p class="text-slate-400 grow">
                         Online budget authorization and review platform, heavily
                         in workflow and document management system.
@@ -246,16 +277,17 @@
                     <b class="block text-right">Java, Spring, Oracle, JQuery</b>
                 </a>
                 <a
+                    rel="noopener noreferrer"
                     href="https://wpnb.skkmigas.go.id"
                     class="border p-4 rounded-2xl dark:hover:bg-slate-800 hover:bg-slate-100 border-slate-700 border-dashed space-y-2 flex flex-col hover:shadow-xl"
                 >
-                    <h4 class="font-bold flex justify-between">
+                    <h3 class="font-bold flex justify-between">
                         Work Plan & Budgeting
                         <small
                             class="border border-blue-500 text-blue-500 rounded p-1"
                             >Proprietary</small
                         >
-                    </h4>
+                    </h3>
                     <p class="text-slate-400 grow">
                         Online budget planner and review, utilize the power of
                         spreadsheet for complex data structure.
@@ -265,16 +297,17 @@
                     >
                 </a>
                 <a
+                    rel="noopener noreferrer"
                     href="https://well.skkmigas.go.id"
                     class="border p-4 rounded-2xl dark:hover:bg-slate-800 hover:bg-slate-100 border-slate-700 border-dashed space-y-2 flex flex-col hover:shadow-xl"
                 >
-                    <h4 class="font-bold flex justify-between">
+                    <h3 class="font-bold flex justify-between">
                         Well
                         <small
                             class="border border-blue-500 text-blue-500 rounded p-1"
                             >Proprietary</small
                         >
-                    </h4>
+                    </h3>
                     <p class="text-slate-400 grow">
                         Oil well management system and inventory database,
                         provide realtime data from heterogenous B2B integration.
@@ -284,16 +317,17 @@
                     >
                 </a>
                 <a
+                    rel="noopener noreferrer"
                     href="https://duithape.com"
                     class="border p-4 rounded-2xl dark:hover:bg-slate-800 hover:bg-slate-100 border-slate-700 border-dashed space-y-2 flex flex-col hover:shadow-xl"
                 >
-                    <h4 class="font-bold flex justify-between">
+                    <h3 class="font-bold flex justify-between">
                         duithape
                         <small
                             class="border border-blue-500 text-blue-500 rounded p-1"
                             >Proprietary</small
                         >
-                    </h4>
+                    </h3>
                     <p class="text-slate-400 grow">
                         Smartphone based wallet & payment, complex microservices
                         and payment gateway integration.
@@ -303,16 +337,17 @@
                     >
                 </a>
                 <a
+                    rel="noopener noreferrer"
                     href="https://pok-online.binamarga.pu.go.id"
                     class="border p-4 rounded-2xl dark:hover:bg-slate-800 hover:bg-slate-100 border-slate-700 border-dashed space-y-2 flex flex-col hover:shadow-xl"
                 >
-                    <h4 class="font-bold flex justify-between">
+                    <h3 class="font-bold flex justify-between">
                         Operational Instructions Activities
                         <small
                             class="border border-blue-500 text-blue-500 rounded p-1"
                             >Proprietary</small
                         >
-                    </h4>
+                    </h3>
                     <p class="text-slate-400 grow">
                         Review & monitor operational activities in field,
                         transforming ancient technology to bleading edge stack.
@@ -320,16 +355,17 @@
                     <b class="block text-right">Java, Spring, MySQL, ReactJS</b>
                 </a>
                 <a
+                    rel="noopener noreferrer"
                     href="https://github.com/taufiqmaulana/fast-share"
                     class="border p-4 rounded-2xl dark:hover:bg-slate-800 hover:bg-slate-100 border-slate-700 border-dashed space-y-2 flex flex-col hover:shadow-xl"
                 >
-                    <h4 class="font-bold flex justify-between">
+                    <h3 class="font-bold flex justify-between">
                         Fast Share
                         <small
                             class="border border-orange-400 text-orange-400 rounded p-1"
                             >Community</small
                         >
-                    </h4>
+                    </h3>
                     <p class="text-slate-400 grow">
                         Quickly share file within same network, Linux DE
                         integration.
@@ -337,16 +373,17 @@
                     <b class="block text-right">Go</b>
                 </a>
                 <a
+                    rel="noopener noreferrer"
                     href="https://github.com/taufiqmaulana/data-work"
                     class="border p-4 rounded-2xl dark:hover:bg-slate-800 hover:bg-slate-100 border-slate-700 border-dashed space-y-2 flex flex-col hover:shadow-xl"
                 >
-                    <h4 class="font-bold flex justify-between">
+                    <h3 class="font-bold flex justify-between">
                         Data Work
                         <small
                             class="border border-orange-400 text-orange-400 rounded p-1"
                             >Community</small
                         >
-                    </h4>
+                    </h3>
                     <p class="text-slate-400 grow">
                         ETL tools to work on large datasets, utilizing spring
                         batch technology.
@@ -354,16 +391,17 @@
                     <b class="block text-right">Java, Spring, ReactJS</b>
                 </a>
                 <a
+                    rel="noopener noreferrer"
                     href="https://github.com/taufiqmaulana/MonoStack"
                     class="border p-4 rounded-2xl dark:hover:bg-slate-800 hover:bg-slate-100 border-slate-700 border-dashed space-y-2 flex flex-col hover:shadow-xl"
                 >
-                    <h4 class="font-bold flex justify-between">
+                    <h3 class="font-bold flex justify-between">
                         MonoStack
                         <small
                             class="border border-orange-400 text-orange-400 rounded p-1"
                             >Community</small
                         >
-                    </h4>
+                    </h3>
                     <p class="text-slate-400 grow">
                         Boilerplate to quick start new project based on
                         Springboot and ReactJS.
@@ -373,7 +411,7 @@
                 <div
                     class="border p-4 rounded-2xl border-slate-700 border-dashed space-y-2 flex flex-col"
                 >
-                    <h4 class="font-bold">Many More ...</h4>
+                    <h3 class="font-bold">Many More ...</h3>
                     <p class="text-slate-400 grow">
                         There are many other projects that I cannot display
                         here, due to limited access and legal reasons.
@@ -387,16 +425,19 @@
                     <li>
                         <img
                             class="h-5 inline mr-2 dark:invert"
-                            src="public/mail-unread-svgrepo-com.svg"
+                            src="/mail-unread-svgrepo-com.svg"
+                            alt="Mail"
                         />
                         <a href="mailto:taufiq.maulana@yahoo.com"
                             >taufiq.maulana@yahoo.com</a
-                        >
+                        >,
+                        <a href="mailto:taufiq@mcoder.dev">taufiq@mcoder.dev</a>
                     </li>
                     <li>
                         <img
                             class="h-5 inline mr-2 dark:invert"
-                            src="public/linkedin-linked-in-svgrepo-com.svg"
+                            src="/linkedin-linked-in-svgrepo-com.svg"
+                            alt="LinkedIn"
                         />
                         <a
                             href="https://www.linkedin.com/in/taufiq-maulana-818938108/"
@@ -406,7 +447,8 @@
                     <li>
                         <img
                             class="h-5 inline mr-2 dark:invert"
-                            src="public/github-svgrepo-com.svg"
+                            src="/github-svgrepo-com.svg"
+                            alt="Github"
                         />
                         <a href="https://github.com/taufiqmaulana"
                             >github.com/taufiqmaulana</a
