@@ -70,14 +70,16 @@
         </script>
     </head>
     <body class="dark:bg-slate-900 dark:text-slate-300 text-slate-800">
-        <div class="container mx-auto px-8 xl:px-0 print:w-full">
+        <div class="xl:container mx-auto px-8 xl:px-0 print:w-full">
             <nav
-                class="sticky top-0 justify-between flex bg-white dark:bg-slate-900 z-40"
+                class="xl:sticky xl:top-0 justify-between flex bg-white dark:bg-slate-900 z-40"
             >
                 <div class="flex items-center space-x-2 py-8">
                     <img class="w-6" src="/id-flag.png" alt="Indonesian Flag" />
-                    <span class="hidden lg:block">Indonesia</span>
-                    <span class="block lg:hidden">Taufiq Maulana</span>
+                    <span class="hidden lg:block print:block">Indonesia</span>
+                    <span class="block lg:hidden print:hidden"
+                        >Taufiq Maulana</span
+                    >
                 </div>
                 <div class="lg:flex hidden">
                     <a class="p-8 dark:hover:bg-slate-600" href="#"
@@ -95,22 +97,31 @@
                     <a class="p-8 dark:hover:bg-slate-600" href="#contacts"
                         >Contacts</a
                     >
+                    <a class="p-8 dark:hover:bg-slate-600" href="#" id="print">
+                        Print
+                        <img
+                            class="h-4 inline mr-2 dark:invert"
+                            src="/arrow-up-right.svg"
+                            alt="LinkedIn"
+                        />
+                    </a>
                 </div>
             </nav>
             <div class="flex items-center">
                 <div class="space-y-2 flex-1">
                     <div
-                        class="lg:hidden px-20 mb-10 flex flex-1 items-center justify-center"
+                        class="lg:hidden print:hidden px-20 mb-10 flex flex-1 items-center justify-center"
                     >
                         <img
                             class="aspect-square rounded-full dark:bg-black bg-slate-900 shadow-2xl"
                             alt="Profile Image"
-                            src="/profile.png"
+                            src="/profile.webp"
                         />
                     </div>
-                    <h1 class="lg:text-6xl text-4xl uppercase">
+                    <h1 class="lg:text-6xl print:text-6xl text-4xl uppercase">
                         Taufiq
-                        <span class="lg:text-4xl text-2xl text-slate-400"
+                        <span
+                            class="lg:text-4xl print:text-4xl text-2xl text-slate-400"
                             >Maulana</span
                         >
                     </h1>
@@ -125,7 +136,9 @@
                         development, I brings dedication, curiosity, and a
                         results-oriented mindset to every project.
                     </p>
-                    <p class="leading-7 text-justify hidden lg:block">
+                    <p
+                        class="leading-7 text-justify hidden lg:block print:block"
+                    >
                         Committed to writing clean, scalable code, and
                         continually improving my skills and the systems I work
                         with. I'm excited to contribute my technical expertise
@@ -133,30 +146,36 @@
                         innovation, quality, and meaningful impact through
                         technology.
                     </p>
-                    <div class="flex flex-col lg:flex-row">
-                        <div class="flex items-center mt-8 lg:mr-10">
+                    <div class="flex flex-col lg:flex-row print:flex-row">
+                        <div
+                            class="flex items-center mt-8 lg:mr-10 print:mr-10"
+                        >
                             <h3 class="text-6xl">
                                 <span id="yearExp"></span>+
                             </h3>
                             <div class="ml-2">Years<br />Experience</div>
                         </div>
-                        <div class="flex items-center mt-8 lg:mr-10">
+                        <div
+                            class="flex items-center mt-8 lg:mr-10 print:mr-10"
+                        >
                             <h3 class="text-6xl">30+</h3>
                             <div class="ml-2">Projects<br />Completed</div>
                         </div>
-                        <div class="flex items-center mt-8 lg:mr-10">
+                        <div
+                            class="flex items-center mt-8 lg:mr-10 print:mr-10"
+                        >
                             <h3 class="text-6xl">4</h3>
                             <div class="ml-2">Companies<br />Organizations</div>
                         </div>
                     </div>
                 </div>
                 <div
-                    class="hidden lg:flex p-10 flex-1 items-center justify-center"
+                    class="hidden lg:flex print:flex p-10 flex-1 items-center justify-center"
                 >
                     <img
                         class="aspect-square rounded-full dark:bg-black bg-slate-900 shadow-2xl"
                         alt="Profile Image"
-                        src="/profile.png"
+                        src="/profile.webp"
                         width="450"
                         height="450"
                     />
@@ -166,55 +185,75 @@
                 <div class="flex items-center">
                     <div class="flex-grow border-t border-slate-400"></div>
                     <span class="flex-shrink mx-4 text-slate-400"
-                        >TECH STACK</span
+                        >HANDS ON</span
                     >
                     <div class="flex-grow border-t border-slate-400"></div>
                 </div>
                 <div
-                    class="overflow-hidden whitespace-nowrap pt-6 pb-8 border-b border-slate-400"
+                    class="overflow-hidden xl:whitespace-nowrap pt-6 pb-8 border-b border-slate-400"
                 >
                     <div
-                        class="text-xl font-bold w-fit inline-block animate-marquee-scroll"
+                        class="text-xl font-bold w-fit inline-block animate-marquee-scroll print:hidden"
                     >
                         <span class="mr-6">JAVA</span>
                         <span class="mr-6">SPRING</span>
                         <span class="mr-6">QUARKUS</span>
-                        <span class="mr-6">REACT.JS</span>
+                        <span class="mr-6">REACT-JS</span>
                         <span class="mr-6">GO</span>
                         <span class="mr-6">PYTHON</span>
                         <span class="mr-6">FAST API</span>
                         <span class="mr-6">LINUX</span>
-                        <span class="mr-6">NODE.JS</span>
+                        <span class="mr-6">NODE-JS</span>
                         <span class="mr-6">TAILWIND</span>
-                        <span class="mr-6">DOCKER</span>
-                        <span class="mr-6">RDBMS</span>
+                        <span class="mr-6">CONTAINERIZATION</span>
+                        <span class="mr-6">SQL</span>
                         <span class="mr-6">NOSQL</span>
-                        <span class="mr-6">GCP</span>
-                        <span class="mr-6">AWS</span>
+                        <span class="mr-6">API</span>
+                        <span class="mr-6">CLOUD</span>
                     </div>
                     <div
-                        class="text-xl font-bold w-fit inline-block animate-marquee-scroll"
+                        class="text-xl font-bold w-fit inline-block animate-marquee-scroll print:hidden"
                     >
                         <span class="mr-6">JAVA</span>
                         <span class="mr-6">SPRING</span>
                         <span class="mr-6">QUARKUS</span>
-                        <span class="mr-6">REACT.JS</span>
+                        <span class="mr-6">REACT-JS</span>
                         <span class="mr-6">GO</span>
                         <span class="mr-6">PYTHON</span>
                         <span class="mr-6">FAST API</span>
                         <span class="mr-6">LINUX</span>
-                        <span class="mr-6">NODE.JS</span>
+                        <span class="mr-6">NODE-JS</span>
                         <span class="mr-6">TAILWIND</span>
-                        <span class="mr-6">DOCKER</span>
-                        <span class="mr-6">RDBMS</span>
+                        <span class="mr-6">CONTAINERIZATION</span>
+                        <span class="mr-6">SQL</span>
                         <span class="mr-6">NOSQL</span>
-                        <span class="mr-6">GCP</span>
-                        <span class="mr-6">AWS</span>
+                        <span class="mr-6">API</span>
+                        <span class="mr-6">CLOUD</span>
+                    </div>
+
+                    <div
+                        class="text-xl font-bold block w-full text-center xl:hidden"
+                    >
+                        <span class="mr-6">JAVA</span>
+                        <span class="mr-6">SPRING</span>
+                        <span class="mr-6">QUARKUS</span>
+                        <span class="mr-6">REACT-JS</span>
+                        <span class="mr-6">GO</span>
+                        <span class="mr-6">PYTHON</span>
+                        <span class="mr-6">FAST API</span>
+                        <span class="mr-6">LINUX</span>
+                        <span class="mr-6">NODE-JS</span>
+                        <span class="mr-6">TAILWIND</span>
+                        <span class="mr-6">CONTAINERIZATION</span>
+                        <span class="mr-6">SQL</span>
+                        <span class="mr-6">NOSQL</span>
+                        <span class="mr-6">API</span>
+                        <span class="mr-6">CLOUD</span>
                     </div>
                 </div>
             </div>
             <div class="mt-8 flex items-center" id="skills">
-                <div class="hidden lg:flex flex-1 p-20">
+                <div class="hidden lg:flex print:flex flex-1 p-20">
                     <dotlottie-wc
                         src="/coding-anim.json"
                         speed="1"
@@ -226,8 +265,19 @@
                     ></dotlottie-wc>
                 </div>
                 <div class="flex-1">
-                    <h2 class="font-bold text-xl ml-3">SKILLS</h2>
                     <ul class="list-disc leading-7">
+                        <li
+                            class="border border-transparent hover:border-slate-700 p-3 rounded"
+                        >
+                            <b>Programming</b>
+                            <p>
+                                Build user facing application, middleware,
+                                backends or fullstacks end to end system from
+                                zero to live production ready with various
+                                programming language, frameworks, libraries and
+                                stacks.
+                            </p>
+                        </li>
                         <li
                             class="border border-transparent hover:border-slate-700 p-3 rounded"
                         >
@@ -243,19 +293,10 @@
                         >
                             <b>SDLC</b>
                             <p>
-                                Design Software Development Life Cycle with
-                                CI/CD automation and monitoring in Microservices
-                                or Monolith architecture.
-                            </p>
-                        </li>
-                        <li
-                            class="border border-transparent hover:border-slate-700 p-3 rounded"
-                        >
-                            <b>Programming</b>
-                            <p>
-                                Build application from Zero to Production ready
-                                with various programming language, frameworks,
-                                libraries and other stacks.
+                                Design and build software development life cycle
+                                ecosystem with automation to ensure consitency
+                                and rapid development experience with CI/CD and
+                                version control system.
                             </p>
                         </li>
                         <li
@@ -263,8 +304,8 @@
                         >
                             <b>Database</b>
                             <p>
-                                Manage RDBMS, Document or Vector databases for
-                                production environment.
+                                Manage relational, document based or vector
+                                databases in production environment.
                             </p>
                         </li>
                         <li
@@ -288,7 +329,7 @@
                     <div class="flex-grow border-t border-slate-400"></div>
                 </div>
                 <div
-                    class="flex space-y-2 flex-col lg:space-y-0 lg:flex-row lg:items-center justify-center pt-6 pb-8 text-xl"
+                    class="flex space-y-2 flex-col lg:space-y-0 lg:flex-row lg:items-center print:space-y-0 print:flex-row print:items-center justify-center pt-6 pb-8 text-xl"
                 >
                     <div class="mr-24">
                         <b>Collega Inti Pratama</b>
@@ -317,7 +358,9 @@
                 <span class="flex-shrink mx-4 text-slate-400">PORTOFOLIOS</span>
                 <div class="flex-grow border-t border-slate-400"></div>
             </div>
-            <div class="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3">
+            <div
+                class="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3 print:grid-cols-3"
+            >
                 <a
                     rel="noopener noreferrer"
                     href="https://newafe.skkmigas.go.id"
@@ -527,6 +570,18 @@
                             >linkedin.com/in/taufiq-maulana-818938108</a
                         >
                     </li>
+                    <li>
+                        <img
+                            class="h-5 inline mr-2 dark:invert"
+                            src="/globe-svgrepo-com.svg"
+                            alt="LinkedIn"
+                        />
+                        <a
+                            rel="noopener noreferrer"
+                            href="https://me.mcoder.dev"
+                            >me.mcoder.dev</a
+                        >
+                    </li>
                 </ul>
             </div>
         </div>
@@ -541,6 +596,13 @@
                     myDiv.style.top = e.clientY + "px";
                     myDiv.style.left = e.clientX + "px";
                 });
+
+                document
+                    .getElementById("print")
+                    .addEventListener("click", function (e) {
+                        e.preventDefault();
+                        window.print();
+                    });
             });
         </script>
     </body>
